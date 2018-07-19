@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SlickFinish.com</title>
+  <meta charset="UTF-8" />
+  <meta name= "viewport"
+  content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="ie=edge">
+  <script defer
+  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stlyesheet" href="style.css">
+</head>
+<style>
+:root {
+  --yellow:#EFD346;
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --Black:#24231C;
+  --Blue:#1E51B6;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+      background: linear-gradient(to bottom right, #3366ff 0%, #ffcc00 100%);
+        background-size: cover;
+
+  
+  line-height: 1.4;
+  margin:20px 30px;
+}
+.btn1 {
+  margin-bottom: 40;
+    background: var(--yellow);
+  color: var(--dark);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+  .top-box {
+
+    height: 600px;
+  background: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+}
+.top-box img {
+  color: var(--Black);
+  height: 550px;
+  width: 1000px;
+  border: solid;
+  position: relative; 
+  top: -90px;
+}
+.top-box h4 {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 2rem;
+  position: relative;
+  top: -50px;
+}
+.top-box-a {
+  color:white;
+  background-color: var(--Blue);
+  margin-bottom: 50px;
+}
+.left-button{
+position: relative;
+left:-70px;
+font-size: 59px;
+top:-430px;
+}
+.left-button:active {
+  border:none;
+  padding:none;
+}
+.right-button{
+  font-size: 59px;
+  top:-430px;
+  position: relative;
+  left:980px;
+}
+.top-box-b{
+
+}
+footer {
+  margin-top: -100px;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+  width: 100%
+}
+@media (max-width: 768px){
+  .container{
+
+
+
+  
+}
+.top-box{
+  background: none;
+  color: white;
+  box-shadow: none;
+}
+.btn{
+  font-size: 50px;
+}
+.top-box h4{
+  font-size: 50px;
+}
+.top-box-b{
+
+  margin-top: 600px;
+  width: 500px;
+  margin-left: 50px;
+
+  }
+  .top-box-b img{
+    height: 1100px;
+
+  }
+  .top-box-a{
+
+    margin-left: 50px;
+  }
+  .top-box-a img{
+    height: 1100px;
+  }
+ body {
+    background: #3463af;
+}
+.left-button {
+  top:-700px;
+}
+.right-button {
+  top:-700px;
+}
+
+}
+
+</style>
+<section class="container">
+<a href="" class="btn" style="top:-10px; position: relative;">BACK</a>
+      <div class="top-box top-box-a">
+        <h4 style="font-family: cursive;">Deluxe Exterior Procedure</h4>
+       <div class="images">
+         <img class="mySlides1" src="https://pbs.twimg.com/media/DicTqJGWAAArLOG.jpg:large" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://pbs.twimg.com/media/Dicct9CWAAAus0N.jpg" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://pbs.twimg.com/media/Dicfih2XUAAGhx0.jpg" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://pbs.twimg.com/media/DicjXb2WAAIQNgF.jpg" style="min-height: 350px; min-width:350px;">
+           <img class="mySlides1" src="https://pbs.twimg.com/media/DicksrzXcAI5MX0.jpg" style="min-height: 350px; min-width:350px;">
+             <img class="mySlides1" src="https://pbs.twimg.com/media/DicpZTwXUAA0Gjo.jpg" style="min-height: 350px; min-width:350px;">
+
+         <button class="left-button" onclick="plusDivs(-1,0)">&#10094;</button>
+         <button class="right-button" onclick="plusDivs(1,0)">&#10095;</button>
+       </div>
+       <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showDivs(1, 0);
+          showDivs(1, 1);
+
+          function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+         }
+
+          function showDivs(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+         }
+        </script>
+      </div>
+      <div class="top-box top-box-b">
+         <h4 style="font-family: cursive;">Deluxe Inerior Procedure</h4>
+       <div class="images">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/35971104_637710663241872_3912775099974942720_n.jpg?_nc_cat=0&oh=d551e2ede12adefe01c3584a1c889baa&oe=5BD68BE7" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c33.0.200.200/p200x200/36188985_637710726575199_5294440747381030912_n.jpg?_nc_cat=0&oh=72d7f9e008ac8295a1783ddafd262de0&oe=5BA35AFB" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36671338_648979638781641_1857897458047123456_n.jpg?_nc_cat=0&oh=fcfa329a99231ca6c092bf3e4a33266c&oe=5BA39CF7" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36031401_639765326369739_723037983137071104_n.jpg?_nc_cat=0&oh=65ab235e5c7e5db5f94d105238a8e17d&oe=5BAADDDF" style="min-height: 350px; min-width:350px;">
+
+         <button class="left-button" onclick="plusDivs(-1,1)">&#10094;</button>
+         <button class="right-button" onclick="plusDivs(1,1)">&#10095;</button>
+       </div>
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showDivs(1, 0);
+          showDivs(1, 1);
+
+          function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+         }
+
+          function showDivs(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+         }
+        </script>
+            <footer>
+      <p>SlickFinish &copy; 2018</p>
+    </footer>
+    </section>
